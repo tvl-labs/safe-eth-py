@@ -1,10 +1,10 @@
 Quick start
 -----------
 
-Just run ``pip install safe-eth-py`` or add it to your **requirements.txt**
+Just run ``pip install safe-eth-py-tvl`` or add it to your **requirements.txt**
 
 If you want django ethereum utils (models, serializers, filters...) you need to run
-``pip install safe-eth-py[django]``
+``pip install safe-eth-py-tvl[django]``
 
 If you have issues building **coincurve** maybe
 `you are missing some libraries <https://ofek.dev/coincurve/install/#source>`_
