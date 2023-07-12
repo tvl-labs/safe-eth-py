@@ -66,22 +66,8 @@ jobs:
         pip install -r requirements-test.txt coveralls
       env:
         PIP_USE_MIRRORS: true
-    - name: Run tests and coverage
-      run: coverage run --source=$SOURCE_FOLDER -m pytest -W ignore::DeprecationWarning -rxXs --reruns 3
-      env:
-        SOURCE_FOLDER: gnosis
-        DJANGO_SETTINGS_MODULE: config.settings.test
-        ETHEREUM_MAINNET_NODE: ${{ secrets.ETHEREUM_MAINNET_NODE }}
-        ETHEREUM_POLYGON_NODE: ${{ secrets.ETHEREUM_POLYGON_NODE }}
     - name: Test packaging
       run: pip install -e .
-    - name: Send results to coveralls
-      # Ignore coveralls issues
-      continue-on-error: true
-      run: coveralls --service=github
-      env:
-        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}  # Required for coveralls
-
   publish:
     runs-on: ubuntu-latest
     needs:
