@@ -320,8 +320,8 @@ MASTER_COPIES: Dict[EthereumNetwork, List[Tuple[str, int, str]]] = {
         ("0x69f4D1788e39c87893C980c06EdF4b7f686e2938", 215889, "1.3.0"),
     ],
     EthereumNetwork.KHALANI_TESTNET: [
-        ("0x79C35a6ef8ff8515D7afEc63E7D546cf0b65f1F8", 2179077, "1.3.0+L2"),
-        ("0x21842e7E38B20ae9603C4dBaB309Ec6a17fdae24", 2179078, "1.3.0"),
+        ("0x3E5c63644E683549055b9Be8653de26E0B4CD36E", 2184594, "1.3.0+L2"),
+        ("0xd9Db270c1B5E3Bd161E8c8503c55cEABeE709552", 2184598, "1.3.0"),
     ],
     EthereumNetwork.KLAYTN_TESTNET_BAOBAB: [
         ("0xfb1bffC9d739B8D520DaF37dF666da4C687191EA", 93821635, "1.3.0+L2"),
@@ -724,7 +724,7 @@ PROXY_FACTORIES: Dict[EthereumNetwork, List[Tuple[str, int]]] = {
         ("0xC22834581EbC8527d974F8a1c97E1bEA4EF910BC", 93108),  # v1.3.0
     ],
     EthereumNetwork.KHALANI_TESTNET: [
-        ("0x678092974545b883341A1884fdb56Ea611c4B8C3", 2179057),  # v1.3.0
+        ("0xa6B71E26C5e0845f74c812102Ca7114b6a896AB2", 2184574),  # v1.3.0
     ],
     EthereumNetwork.KLAYTN_TESTNET_BAOBAB: [
         ("0xC22834581EbC8527d974F8a1c97E1bEA4EF910BC", 93821613),  # v1.3.0
